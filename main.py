@@ -15,7 +15,7 @@ class InputData(BaseModel):
     Latitude: float
     Longitude: float
 
-with open('/Users/alexandre/Documents/california_regression/best_regression_model.pkl', 'rb') as f:
+with open('best_regression_model.pkl', 'rb') as f:
     saved_objects = pickle.load(f)
 
 loaded_feature_engineering = saved_objects["pipeline"]
